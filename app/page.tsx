@@ -4,6 +4,7 @@ const address = {
 };
 const email = "gpiynyudnd_1794581723@tfbnw.net";
 const facebook = "https://www.facebook.com/davesbarbershop123/";
+const instagram = "https://www.instagram.com/davesbarbershop123";
 const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
   `${address.street}, ${address.city}`,
 )}`;
@@ -89,13 +90,24 @@ export default function Home() {
               />
             ))}
           </div>
+          <p className="mt-8 text-muted">
+            See more fresh cuts on{" "}
+            <a
+              href={instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium text-foreground underline underline-offset-4 hover:text-accent"
+            >
+              Instagram @davesbarbershop123
+            </a>
+          </p>
         </div>
       </section>
 
       {/* Visit / Contact */}
       <section id="visit" className="mx-auto max-w-5xl px-6 py-20">
         <h2 className="font-serif text-3xl font-bold">Visit us</h2>
-        <div className="mt-8 grid gap-8 sm:grid-cols-3">
+        <div className="mt-8 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           <div>
             <h3 className="text-sm uppercase tracking-widest text-muted">
               Address
@@ -127,6 +139,19 @@ export default function Home() {
               className="mt-2 block hover:text-accent"
             >
               facebook.com/davesbarbershop123
+            </a>
+          </div>
+          <div>
+            <h3 className="text-sm uppercase tracking-widest text-muted">
+              Instagram
+            </h3>
+            <a
+              href={instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-2 block hover:text-accent"
+            >
+              @davesbarbershop123
             </a>
           </div>
         </div>
