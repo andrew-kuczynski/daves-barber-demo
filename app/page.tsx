@@ -3,7 +3,7 @@ const address = {
   city: "Waltham, MA 02451",
 };
 const email = "gpiynyudnd_1794581723@tfbnw.net";
-const facebook = "https://www.facebook.com/davesbarbershop123/";
+const facebook = "https://www.facebook.com/davesbarber123/";
 const instagram = "https://www.instagram.com/davesbarbershop123";
 const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
   `${address.street}, ${address.city}`,
@@ -138,7 +138,7 @@ export default function Home() {
               rel="noopener noreferrer"
               className="mt-2 block hover:text-accent"
             >
-              facebook.com/davesbarbershop123
+              davesbarber123
             </a>
           </div>
           <div>
